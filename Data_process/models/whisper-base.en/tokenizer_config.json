@@ -1,0 +1,32 @@
+{
+  "tokenizer_class": "WhisperTokenizer",
+  "vocab_size": 51865,
+  "language": "en",
+  "task": "transcribe",
+  "bos_token": "<<|startoftranscript|>",
+  "eos_token": "<<|endoftranscript|>",
+  "pad_token": "<<|endoftext|>",
+  "additional_special_tokens": [
+    "<<|startoftranscript|>",
+    "<<|endoftranscript|>",
+    "<<|startoflm|>",
+    "<<|endlm|>",
+    "<<|startoftranslation|>",
+    "<<|endoftranslation|>",
+    "<<|en|>",
+    "<<|zh|>",
+    "<<|es|>",
+    "<<|fr|>",
+    "<<|de|>",
+    "<<|ja|>",
+    "<<|ko|>",
+    "<<|ru|>",
+    "<<|pt|>",
+    "<<|ar|>",
+    "<<|tr|>",
+    "<<|endoftext|>"
+  ],
+  "clean_up_tokenization_spaces": true,
+  "lowercase": false,
+  "model_max_length": 448
+}

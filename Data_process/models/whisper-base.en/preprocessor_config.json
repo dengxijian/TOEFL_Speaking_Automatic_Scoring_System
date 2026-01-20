@@ -1,0 +1,14 @@
+{
+  "feature_extractor_type": "WhisperFeatureExtractor",
+  "do_normalize": true,
+  "mean": -0.04363567,
+  "std": 4.4433686,
+  "sample_rate": 16000,
+  "num_mel_bins": 80,
+  "padding_side": "right",
+  "padding_value": 0.0,
+  "do_trim_silence": true,
+  "trim_threshold_db": 60.0,
+  "hop_length": 160,
+  "win_length": 400
+}

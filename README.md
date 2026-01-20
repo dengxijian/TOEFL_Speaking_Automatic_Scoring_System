@@ -150,7 +150,7 @@ results = system.evaluate_batch(
 5. 若需要访问UI界面，请确保api成功加载，需要在先在一个终端uvicorn api_server:app --host 127.0.0.1 --port 8000 再新开一个终端启动./cloudflared tunnel --url http://127.0.0.1:8000
 
 ## UI界面展示
-![{%W`LGUVVJP8VW4~6N0 5DS](https://github.com/user-attachments/assets/f3755f9c-2a5c-4309-a5d1-a605983ff03f)
-
 ![A46YJ FEU)({F N1_`TO)EV](https://github.com/user-attachments/assets/19054845-2195-48cc-86b4-d3a94e8e8e8c)
+
+![{%W`LGUVVJP8VW4~6N0 5DS](https://github.com/user-attachments/assets/f3755f9c-2a5c-4309-a5d1-a605983ff03f)
 

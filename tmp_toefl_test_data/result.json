@@ -1,0 +1,11 @@
+{
+  "audio_score": 4.462464809417725,
+  "transcribed_text": "The professor says that the animals, including humans, are flowing through 24 hours biological circles, and it is determined that only by the internal clock but also some external factors. The professor used a flowing squirrel as an example. The squirrel sleeps during the day and works at night, but the exomexers put them in an environment which they are not exposed to the light, and find that they still follow the regular pattern of flipping and eating, but it's not possible to turn it forward. It seems that their clock is half an hour shorter than the 24 hours, and they wake up a little bit earlier every day, but later after they put back to the normal environment, they find that their clock has been shifted a lot, and it's not matched up to the 24 hours, and they wake up in the middle of the day, but gradually they adjust it back to normal 24 hours after they are exposed to the regular external factors.",
+  "llm_score": 5.0,
+  "audio_score_detail": {
+    "raw_score": 4.462464809417725,
+    "clamped_score": 4.462464809417725,
+    "device": "cuda"
+  },
+  "llm_score_detail": "The student's answer addresses the question by discussing both internal and external factors influencing animals' 24-hour activity cycles, using the flying squirrel example. However,"
+}

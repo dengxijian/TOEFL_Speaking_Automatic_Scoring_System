@@ -1,0 +1,3 @@
+preload: true
+preload_path: /root/autodl-tmp
+model_name: Qwen/Qwen3-Embedding-0.6B

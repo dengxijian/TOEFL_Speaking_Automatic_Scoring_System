@@ -16,11 +16,11 @@ pip install torch torchaudio faster-whisper requests
 
 ## 所需模型文件
 
-| 模型 | 默认路径 | 说明 |
-|------|----------|------|
-| wav2vec 模型 | `/root/autodl-tmp/models/checkpoints/best_model.pth` | 语音质量评分模型 |
-| Whisper 模型 | `wav2text/models/whisper-base.en` | 语音转文字模型 |
-| Ollama 服务 | `http://localhost:11434` | 需要运行 Ollama 并拉取 `qwen3:8b` 模型 |
+| 模型         | 默认路径                                             | 说明                                   |
+| ------------ | ---------------------------------------------------- | -------------------------------------- |
+| wav2vec 模型 | `/root/autodl-tmp/models/checkpoints/best_model.pth` | 语音质量评分模型                       |
+| Whisper 模型 | `wav2text/models/whisper-base.en`                    | 语音转文字模型                         |
+| Ollama 服务  | `http://localhost:11434`                             | 需要运行 Ollama 并拉取 `qwen3:8b` 模型 |
 
 ## 使用方式
 
@@ -39,16 +39,16 @@ python inference.py \
 
 **参数说明：**
 
-| 参数 | 必需 | 默认值 | 说明 |
-|------|------|--------|------|
-| `--audio` | 是 | `test_data/test_audio.wav` | 考生语音文件路径 |
-| `--transcript` | 是 | `test_data/听力原文.txt` | 听力原文文件路径 |
-| `--task` | 是 | `test_data/任务描述.txt` | 任务要求文件路径 |
-| `--wav2vec-model` | 否 | 见上表 | wav2vec 模型路径 |
-| `--whisper-model` | 否 | 见上表 | Whisper 模型路径 |
-| `--ollama-host` | 否 | `http://localhost:11434` | Ollama 服务地址 |
-| `--ollama-model` | 否 | `qwen3:8b` | Ollama 模型名称 |
-| `--output-json` | 否 | 无 | 结果输出 JSON 文件路径 |
+| 参数              | 必需 | 默认值                     | 说明                   |
+| ----------------- | ---- | -------------------------- | ---------------------- |
+| `--audio`         | 是   | `test_data/test_audio.wav` | 考生语音文件路径       |
+| `--transcript`    | 是   | `test_data/听力原文.txt`   | 听力原文文件路径       |
+| `--task`          | 是   | `test_data/任务描述.txt`   | 任务要求文件路径       |
+| `--wav2vec-model` | 否   | 见上表                     | wav2vec 模型路径       |
+| `--whisper-model` | 否   | 见上表                     | Whisper 模型路径       |
+| `--ollama-host`   | 否   | `http://localhost:11434`   | Ollama 服务地址        |
+| `--ollama-model`  | 否   | `qwen3:8b`                 | Ollama 模型名称        |
+| `--output-json`   | 否   | 无                         | 结果输出 JSON 文件路径 |
 
 ### 方式二：作为模块导入
 
@@ -143,6 +143,13 @@ results = system.evaluate_batch(
 
 ## 注意事项
 
+通过 [ModelScope](https://modelscope.cn/models/modelscope/ollama-linux?utm_source=chatgpt.com) 下载 Ollama Linux 客户端：
+
+```
+pip install modelscope
+modelscope download --model=modelscope/ollama-linux --local_dir ./ollama-linux --revision v0.14.1
+```
+
 1. 首次运行前请确保 Ollama 服务已启动：`ollama serve`
 2. 需要预先拉取 LLM 模型：`ollama pull qwen3:8b`
 3. 音频最大处理长度为 30 秒，超出部分会被截断
@@ -150,7 +157,7 @@ results = system.evaluate_batch(
 5. 若需要访问UI界面，请确保api成功加载，需要在先在一个终端uvicorn api_server:app --host 127.0.0.1 --port 8000 再新开一个终端启动./cloudflared tunnel --url http://127.0.0.1:8000
 
 ## UI界面展示
+
 ![A46YJ FEU)({F N1_`TO)EV](https://github.com/user-attachments/assets/19054845-2195-48cc-86b4-d3a94e8e8e8c)
 
 ![{%W`LGUVVJP8VW4~6N0 5DS](https://github.com/user-attachments/assets/f3755f9c-2a5c-4309-a5d1-a605983ff03f)
-

@@ -2,6 +2,7 @@
 
 ## 概述
 
+![pipeline](static/pipeline.jpeg)
 `inference.py` 是一个语音评分整合系统，集成了三个核心功能：
 
 1. **语音质量评分** — 使用 CNN-LSTM 模型对语音进行质量评估（1.0-6.0 分）
@@ -21,6 +22,9 @@ pip install torch torchaudio faster-whisper requests
 | wav2vec 模型 | `/root/autodl-tmp/models/checkpoints/best_model.pth` | 语音质量评分模型                       |
 | Whisper 模型 | `wav2text/models/whisper-base.en`                    | 语音转文字模型                         |
 | Ollama 服务  | `http://localhost:11434`                             | 需要运行 Ollama 并拉取 `qwen3:8b` 模型 |
+
+text judgement pipeline 如下：
+![text](static/text.jpeg)
 
 ## 使用方式
 
